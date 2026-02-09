@@ -44,7 +44,7 @@ public class Principal {
 				int fuerza=sc.nextInt();
 				sc.nextLine();	
 					
-				Mago new_M_1 = new Mago(nombre,vida,mana);
+				Mago new_M_1 = new Mago(nombre,vida,danioPropio,mana);
 				Arma armaMago= new Arma("barita",20);
 			}break;
 			case 3:{
@@ -58,9 +58,9 @@ public class Principal {
 				}while(!sc.hasNextInt());
 				do {
 					System.out.println("Dame la fuerza de tu Nigromante");
-					fuerza=sc.nextInt();
+					danioPropio=sc.nextInt();
 				}while(!sc.hasNextInt());	
-				Nigromante new_N_1 = new Nigromante(nombre,vida,fuerza);
+				Nigromante new_N_1 = new Nigromante(nombre,vida,danioPropio);
 			}break;
 			}
 		}
